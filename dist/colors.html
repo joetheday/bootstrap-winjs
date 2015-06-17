@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>WinStrap</title>
+    <title>Winstrap</title>
 
     <link rel="stylesheet" href="css/winstrap.css?0.3.0" />
 
@@ -29,7 +29,7 @@
             </button>
 
             <a href="index.html" class="navbar-brand">
-                <img src="images/winstrap.png" alt="WinStrap" height="29" />
+                <img src="images/winstrap.png" alt="Winstrap" height="29" />
             </a>
 
         </div>
@@ -42,11 +42,8 @@
                         <li><a href="colors.html">All colors</a></li>
                         <li class="divider"></li>
                         <li><a href="colors.html#bootstrap-colors">Bootstrap colors</a></li>
-                        <li><a href="colors.html#grays">Grays</a></li>
-                        <li><a href="colors.html#accent-colors">Accent colors</a></li>
-                        <li><a href="colors.html#other-accent-colors">Other accent colors</a></li>
-                        <li><a href="colors.html#base-colors">Base colors</a></li>
-                        <li><a href="colors.html#alt-colors">Alt colors</a></li>
+                        <li><a href="colors.html#basel-colors">Basel colors</a></li>
+                        <li><a href="colors.html#basel-alt-colors">Basel alt colors</a></li>
                     </ul>
                 </li>
 
@@ -177,22 +174,13 @@
                 <ul class="nav nav-pills" data-win-scroll="smooth">
                     <li role="presentation">
                         <a href="#bootstrap-colors">Bootstrap colors</a>
-                    </li>                    
-                    <li role="presentation">
-                        <a href="#grays">Grays</a>
-                    </li>                    
-                    <li role="presentation">
-                        <a href="#accent-colors">Accent colors</a>
                     </li>
                     <li role="presentation">
-                        <a href="#other-accent-colors">Other accent colors</a>
-                    </li>                        
-                    <li role="presentation">
-                        <a href="#base-colors">Base colors</a>
+                        <a href="#basel-colors">Basel colors</a>
                     </li>
                     <li role="presentation">
-                        <a href="#alt-colors">Alt colors</a>
-                    </li>                      
+                        <a href="#basel-alt-colors">Basel alt colors</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -200,378 +188,667 @@
 </div>
 
 <div class="container">
-    <section class="win-section" id="bootstrap-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#bootstrap-colors">Bootstrap colors</a>
-        </h1>
-    </header>        
-    <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Windows 10 colors instead of Bootstrap colors.</p>
-        <div class="col-sm-6">
-            <p class="color accent"></p>
-
-            <pre><code class="language-scss">$brand-primary<span class="value">: $win-color-accent !default;</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-green"></p>
-
-            <pre><code class="language-scss">$brand-success<span class="value">: $win-color-core-green !default;</span></code></pre>
-
-        </div>
-        <div class="col-sm-6">
-            <p class="color secondary-blue"></p>
-
-            <pre><code class="language-scss">$brand-info<span class="value">: $win-color-secondary-blue !default;</span></code></pre>
-
-        </div>      
-        <div class="col-sm-6">
-            <p class="color core-yellow"></p>
-
-            <pre><code class="language-scss">$brand-warning<span class="value">: $win-color-core-yellow !default;</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-red"></p>
-
-            <pre><code class="language-scss">$brand-danger<span class="value">: $win-color-core-red !default;</span></code></pre>
-
-        </div>   
-    </section>
-
-
-<section class="win-section" id="grays">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#grays">Grays</a>
-        </h1>
-    </header>
-
     <div class="row">
-        <div class="col-xs-24">
-            <p>
-                Here are the grays in Bootstrap-WinJS. These greys are a combination of colors in the controls color ramp as well as the services guide.
-            </p>
-        </div>
+    <div class="col-xs-24">
+        <section class="win-section" id="bootstrap-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#bootstrap-colors">Bootstrap colors</a>
+                </h1>
+            </header>        
+            <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Basel colors instead of Bootstrap colors.</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent"></p>
+                </div> 
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$brand-primary<span class="value">: $win-color-fl-accent;</span></code></pre>
+
+                </div>  
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$brand-success<span class="value">: $win-color-fl-<span class="number">50</span>;</span></code></pre>
+
+                </div>
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$brand-info<span class="value">: $win-color-fl-<span class="number">50</span>;</span></code></pre>
+
+                </div>      
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$brand-warning<span class="value">: $win-color-fl-alert;</span></code></pre>
+
+                </div>   
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$brand-danger<span class="value">: $win-color-fl-alert;</span></code></pre>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-24">
+        <section class="win-section" id="basel-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#basel-colors">Basel colors</a>
+                </h1>
+            </header>
+            <h3>Base colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-light"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-light<span class="value">: <span class="hexcolor">#FFFFFF</span>;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-dark"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-dark<span class="value">: <span class="hexcolor">#000000</span>;</span></code></pre>
+
+                </div>        
+            </div>
+
+            <h3>Background colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-bg-10"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-10<span class="value">: $win-color-light;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-bg-20"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-20<span class="value">: <span class="hexcolor">#F2F2F2</span>;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-bg-30"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-30<span class="value">: <span class="hexcolor">#E5E5E5</span>;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-bg-40"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-40<span class="value">: <span class="hexcolor">#D9D9D9</span>;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-bg-50"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-50<span class="value">: <span class="hexcolor">#CCCCCC</span>;</span></code></pre>
+
+                </div>
+            </div>
+
+            <h3>Fill colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent<span class="value">: <span class="hexcolor">#0078D7</span>;</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-low"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-low<span class="value">: rgba($win-color-fl-accent, <span class="number">0.4</span>);</span></code></pre>
+
+                </div>  
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-medium"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-<span class="value">medium</span><span class="value">: rgba($win-color-fl-accent, <span class="number">0.6</span>);</span></code></pre>
+
+                </div>   
+               
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-high"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-high<span class="value">: rgba($win-color-fl-accent, <span class="number">0.7</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-alert<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-10"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-10<span class="value">: rgba($win-color-dark, <span class="number">0.05</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-20"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-20<span class="value">: rgba($win-color-dark, <span class="number">0.1</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-30"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-30<span class="value">: rgba($win-color-dark, <span class="number">0.2</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-40"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-40<span class="value">: rgba($win-color-dark, <span class="number">0.4</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-50<span class="value">: rgba($win-color-dark, <span class="number">0.6</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-60"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-60<span class="value">: rgba($win-color-dark, <span class="number">0.8</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color win-color-fill-70"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-70<span class="value">: $win-color-dark;</span></code></pre>
+
+                </div>
+            </div>
+
+            <h3>Line colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent<span class="value">: <span class="hexcolor">#0078D7</span>;</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-low"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-low<span class="value">: rgba($win-color-fl-accent, <span class="number">0.4</span>);</span></code></pre>
+
+                </div>  
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-medium"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-<span class="value">medium</span><span class="value">: rgba($win-color-fl-accent, <span class="number">0.6</span>);</span></code></pre>
+
+                </div>   
+               
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-high"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-high<span class="value">: rgba($win-color-fl-accent, <span class="number">0.7</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-alert<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-10"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-10<span class="value">: rgba($win-color-dark, <span class="number">0.05</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-20"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-20<span class="value">: rgba($win-color-dark, <span class="number">0.1</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-30"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-30<span class="value">: rgba($win-color-dark, <span class="number">0.2</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-40"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-40<span class="value">: rgba($win-color-dark, <span class="number">0.4</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-50"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-50<span class="value">: rgba($win-color-dark, <span class="number">0.6</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-60"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-60<span class="value">: rgba($win-color-dark, <span class="number">0.8</span>);</span></code></pre>
+
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line win-color-line-70"></p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-70<span class="value">: $win-color-dark;</span></code></pre>
+
+                </div>
+            </div>
+
+            <h3>Text colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-type-primary">Primary</p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-primary<span class="value">: $win-color-dark;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-type-secondary">Secondary</p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-secondary<span class="value">: rgba($win-color-type-primary, <span class="number">0.6</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-type-disabled">Disabled</p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-<span class="value">disabled</span><span class="value">: rgba($win-color-type-primary, <span class="number">0.2</span>);</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-type-accent">Accent</p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-accent<span class="value">: <span class="hexcolor">#0078D7</span>;</span></code></pre>
+
+                </div>        
+
+                <div class="col-md-12">
+                    <p class="color win-color-type-alert">Alert</p>
+                </div>
+                <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-alert<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-24">
+        <section class="win-section" id="basel-alt-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#basel-alt-colors">Basel alt colors</a>
+                </h1>
+            </header>
+            <div class="win-section-body win-color-bg-10-alt"  style="padding: 11.5px 11.5px 0 11.5px">
+                <h3 class="win-color-primary-type-alt">Alt background colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-10-alt<span class="value">: $win-color-dark;</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-20-alt<span class="value">: <span class="hexcolor">#191919</span>;</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-30-alt<span class="value">: <span class="hexcolor">#262626</span>;</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-40-alt<span class="value">: <span class="hexcolor">#333333</span>;</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-bg-50-alt<span class="value">: <span class="hexcolor">#404040</span>;</span></code></pre>
+
+                    </div>
+                </div>
+
+                <h3 class="win-color-primary-type-alt">Alt fill colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-alt<span class="value">: $win-color-fl-accent;</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-low-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-low-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.4</span>);</span></code></pre>
+
+                    </div>  
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-medium-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-<span class="value">medium</span>-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.6</span>);</span></code></pre>
+
+                    </div>   
+                   
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-high-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.7</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-alert-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-alert-alt<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-10-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">1</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-20-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">15</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-30-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-40-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-50-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">6</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-60-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-60-alt<span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">8</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-70-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-70-alt<span class="value">: <span class="hexcolor">#FFFFFF</span>;</span></code></pre>
+
+                    </div>
+                </div>
+
+                <h3 class="win-color-primary-type-alt">Alt line colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-alt<span class="value">: <span class="hexcolor">#0078D7</span>;</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-low-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-low-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.4</span>);</span></code></pre>
+
+                    </div>  
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-medium-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-<span class="value">medium</span>-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.6</span>);</span></code></pre>
+
+                    </div>   
+                   
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-accent-high-alt<span class="value">: rgba($win-color-fl-accent, <span class="number">0.7</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-alert-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-alert-alt<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-10-alt<span class="value">: rgba($win-color-light, <span class="number">0.1</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-20-alt<span class="value">: rgba($win-color-light, <span class="number">0.15</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-30-alt<span class="value">: rgba($win-color-light, <span class="number">0.2</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-40-alt<span class="value">: rgba($win-color-light, <span class="number">0.4</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-50-alt<span class="value">: rgba($win-color-light, <span class="number">0.6</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-60-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-60-alt<span class="value">: rgba($win-color-light, <span class="number">0.8</span>);</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-70-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-fl-70-alt<span class="value">: $win-color-light;</span></code></pre>
+
+                    </div>
+                </div>
+
+                <h3 class="win-color-type-primary-alt">Alt text colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-type-primary-alt">Primary</p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-primary-alt<span class="value">: $win-color-light;</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-secondary-alt">Secondary</p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-secondary-alt<span class="value">: rgba($win-color-type-primary-alt, <span class="number">0.6</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-disabled-alt">Disabled</p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-<span class="value">disabled</span>-alt<span class="value">: rgba($win-color-type-primary-alt, <span class="number">0.2</span>);</span></code></pre>
+
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-accent-alt">Accent</p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-accent-alt<span class="value">: <span class="hexcolor">#0078D7</span>;</span></code></pre>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-alert-alt">Alert</p>
+                    </div>
+                    <div class="col-md-12">
+                    <pre><code class="language-scss">$win-<span class="attribute">color</span>-type-alert-alt<span class="value">: <span class="hexcolor">#D02E00</span>;</span></code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 
-        <div class="col-sm-6">
-            <p class="color chrome-10"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-10<span class="value">: <span class="hexcolor">#f2f2f2</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-20"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-20<span class="value">: <span class="hexcolor">#d2d2d2</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-30"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-30<span class="value">: <span class="hexcolor">#e6e6e6</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-40"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-40<span class="value">: <span class="hexcolor">#cccccc</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-50"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-50<span class="value">: <span class="hexcolor">#767676</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-60"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-60<span class="value">: <span class="hexcolor">#7a7a7a</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-70"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-70<span class="value">: <span class="hexcolor">#333333</span>;</span></code></pre>
-
-        </div>        
-
-        <div class="col-sm-6">
-            <p class="color chrome-80"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-chrome-80<span class="value">: <span class="hexcolor">#171717</span>;</span></code></pre>
-
-        </div>        
-</section>
-
-
-
-<section class="win-section" id="base-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#base-colors">Base colors</a>
-        </h1>
-    </header>        
-    <p>Base colors</p>
-  
-        <div class="col-sm-6">
-            <p class="color base-low"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span>-low<span class="value">: rgba($win-color-base, <span class="number">0.1</span>);</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color base-medium-low"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span>-<span class="value">medium</span>-low<span class="value">: rgba($win-color-base, <span class="number">0.2</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-medium"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span>-<span class="value">medium</span><span class="value">: rgba($win-color-base, <span class="number">0.4</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-medium-high"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span>-<span class="value">medium</span>-high<span class="value">: rgba($win-color-base, <span class="number">0.6</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-high"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span>-high<span class="value">: rgba($win-color-base, <span class="number">0.8</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-<span class="tag">base</span><span class="value">: <span class="hexcolor">#000</span>;</span></code></pre>
-
-        </div> 
-</section>
-
-<section class="win-section" id="alt-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#alt-colors">Alt colors</a>
-        </h1>
-    </header>        
-    <p>Alt colors</p>
-
-        <div class="col-sm-6">
-            <p class="color alt-low"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt-low<span class="value">: rgba($win-color-alt, <span class="number">0.1</span>);</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color alt-medium-low"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt-<span class="value">medium</span>-low<span class="value">: rgba($win-color-alt, <span class="number">0.2</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-medium"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt-<span class="value">medium</span><span class="value">: rgba($win-color-alt, <span class="number">0.4</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-medium-high"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt-<span class="value">medium</span>-high<span class="value">: rgba($win-color-alt, <span class="number">0.6</span>);</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-high"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt-high<span class="value">: rgba($win-color-alt, <span class="number">0.8</span>);</span></code></pre>
-
-        </div>      
-        <div class="col-sm-6">
-            <p class="color alt"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-alt<span class="value">: <span class="hexcolor">#fff</span>;</span></code></pre>
-
-        </div>   
-</section>
-<section class="win-section" id="accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#accent-colors">Brand accent color</a>
-        </h1>
-    </header>
-
-    <div class="row">
-        <div class="col-xs-24">
-            <p>Brand accent color</p>
-        </div>
-
-        <div class="col-sm-6">
-            <p class="color accent"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-accent<span class="value">: rgb(<span class="number">0</span>, <span class="number">120</span>, <span class="number">215</span>);</span></code></pre>
-
-        </div>     
-
-        <div class="col-sm-6">
-            <p class="color accent-low"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-accent-low<span class="value">: rgba($win-color-accent, <span class="number">0.4</span>);</span></code></pre>
-
-        </div>  
-
-        <div class="col-sm-6">
-            <p class="color accent-medium"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-accent-<span class="value">medium</span><span class="value">: rgba($win-color-accent, <span class="number">0.6</span>);</span></code></pre>
-
-        </div>   
-       
-        <div class="col-sm-6">
-            <p class="color accent-high"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-accent-high<span class="value">: rgba($win-color-accent, <span class="number">0.7</span>);</span></code></pre>
-
-        </div>  
-</section>
-<section class="win-section" id="other-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#other-accent-colors">Core accent colors</a>
-        </h1>
-    </header>        
-
-    <p>Core accent colors</p>  
-        <div class="col-sm-6">
-            <p class="color core-yellow"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-yellow<span class="value">: <span class="hexcolor">#FFF100</span>;</span></code></pre>
-
-        </div>    
-        <div class="col-sm-6">
-            <p class="color core-orange"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-orange<span class="value">: <span class="hexcolor">#FF8C00</span>;</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-red"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-red<span class="value">: <span class="hexcolor">#E81123</span>;</span></code></pre>
-
-        </div> 
-        <div class="col-sm-6">
-            <p class="color core-magenta"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-magenta<span class="value">: <span class="hexcolor">#EC008C</span>;</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-purple"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-purple<span class="value">: <span class="hexcolor">#68217A</span>;</span></code></pre>
-
-        </div>          
-
-        <div class="col-sm-6">
-            <p class="color core-blue"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-blue<span class="value">: <span class="hexcolor">#00188F</span>;</span></code></pre>
-
-        </div>    
-        <div class="col-sm-6">
-            <p class="color core-teal"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-teal<span class="value">: <span class="hexcolor">#00B294</span>;</span></code></pre>
-
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-green"></p>
-
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-core-green<span class="value">: <span class="hexcolor">#13A10E</span>;</span></code></pre>
-
-        </div>   
-<section class="win-section" id="secondary-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#secondary-accent-colors">Secondary accent colors</a>
-        </h1>
-    </header>          
-        <div class="col-sm-6">
-            <p class="color secondary-magenta"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-secondary-magenta<span class="value">: <span class="hexcolor">#E3008C</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-purple"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-secondary-purple<span class="value">: <span class="hexcolor">#32145A</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-blue"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-secondary-blue<span class="value">: <span class="hexcolor">#00188F</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-teal"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-secondary-teal<span class="value">: <span class="hexcolor">#004B50</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-green"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-secondary-green<span class="value">: <span class="hexcolor">#004B1C</span>;</span></code></pre>
-
-        </div> 
-</section>
-<section class="win-section" id="tertiary-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#tertiary-accent-colors">Tertiary accent colors</a>
-        </h1>
-    </header>          
-        <div class="col-sm-6"><p class="color tertiary-yellow"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-yellow<span class="value">: <span class="hexcolor">#FFF100</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-orange"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-orange<span class="value">: <span class="hexcolor">#FF8C00</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-red"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-red<span class="value">: <span class="hexcolor">#A80000</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-magenta"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-magenta<span class="value">: <span class="hexcolor">#5C005C</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-purple"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-purple<span class="value">: <span class="hexcolor">#B4A0FF</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-cyan"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-cyan<span class="value">: <span class="hexcolor">#00BCF2</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-blue"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-blue<span class="value">: <span class="hexcolor">#002050</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-teal"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-teal<span class="value">: <span class="hexcolor">#00B294</span>;</span></code></pre>
-
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-green"></p>
-            <pre><code class="language-scss">$win-<span class="attribute">color</span>-tertiary-green<span class="value">: <span class="hexcolor">#BAD80A</span>;</span></code></pre>
-
-        </div>  
-</section>
 
 </div>
 
