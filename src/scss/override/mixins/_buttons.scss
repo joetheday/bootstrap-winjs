@@ -3,13 +3,14 @@
   color: $color;
   background-color: $background;
   border-color: $border;
+  transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
 
   &:hover,
   &:focus,
   &.focus,
   .open > &.dropdown-toggle {
     color: $color;
-    background-color: $background;
+    background-color: darken($background, 10%);
     border-color: $win-color-fl-40;
   }
 
@@ -18,7 +19,11 @@
   &.active,
   .open > &.dropdown-toggle {
     background-image: none;
-    color: $color;
+    @if ("#{$color}" == "#000000") {
+      color: lighten($color, 25%);
+    } @else {
+      color: darken($color, 10%);
+    }
     background-color: darken($background, 10%);
     border-color: transparent;
   }
