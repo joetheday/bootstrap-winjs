@@ -6450,7 +6450,8 @@ a {
   .btn, .btn:focus {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.1);
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
 
 .btn:active, .btn.active {
   border-color: rgba(0, 0, 0, 0.4);
@@ -6476,7 +6477,8 @@ a {
     background-image: none;
     color: #404040;
     background-color: rgba(0, 0, 0, 0.2);
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
   .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.2);
@@ -6497,7 +6499,8 @@ a {
     background-image: none;
     color: #e6e6e6;
     background-color: #005ca4;
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active, .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.2);
@@ -6516,7 +6519,8 @@ a {
     background-image: none;
     color: #404040;
     background-color: rgba(0, 0, 0, 0.2);
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
   .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.2);
@@ -6537,7 +6541,8 @@ a {
     background-image: none;
     color: #e6e6e6;
     background-color: #9d2300;
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
   .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.2);
@@ -6556,7 +6561,8 @@ a {
     background-image: none;
     color: #e6e6e6;
     background-color: #9d2300;
-    border-color: transparent; }
+    border-color: transparent;
+    outline: 0; }
   .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.2);
