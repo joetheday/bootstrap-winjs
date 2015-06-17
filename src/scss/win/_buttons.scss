@@ -13,13 +13,14 @@
     color: $btn-on-light-color;
     background-color: $btn-on-light-bg;
     border-color: $btn-on-light-border;
+    transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
 
     &:hover,
     &:focus,
     &.focus, 
     .open > &.dropdown-toggle{
         color: $btn-on-light-color;
-        background-color: $btn-on-light-bg;
+        background-color: $win-color-fl-60;
         border-color: $win-color-fl-50-alt;
     }
 
@@ -28,7 +29,7 @@
     .open > &.dropdown-toggle {
         background-image: none;
         background-color: $win-color-fl-60;
-        color: $btn-on-light-color;
+        color: darken($btn-on-light-color, 10%);
         border-color: transparent;
     }
 
@@ -52,13 +53,14 @@
     color: $btn-on-dark-color;
     background-color: $btn-on-dark-bg;
     border-color: $btn-on-dark-border;
+    transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
 
     &:hover,
     &:focus,
     &.focus, 
     .open > &.dropdown-toggle{
         color: $btn-on-dark-color;
-        background-color: $btn-on-dark-bg;
+        background-color: $win-color-fl-60-alt;
         border-color: $win-color-fl-accent-medium;
     }
 
@@ -67,7 +69,7 @@
     .open > &.dropdown-toggle {
         background-image: none;
         background-color: $win-color-fl-60-alt;
-        color: $btn-on-dark-color;
+        color: lighten($btn-on-dark-color, 25%);
         border-color: transparent;
     }
 
