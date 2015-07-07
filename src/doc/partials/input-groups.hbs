@@ -1,50 +1,64 @@
 <section class="win-section" id="input-groups">
-  <header class="win-section-header row">
-    <h1 class="win-section-title col-xs-24">
-      <a href="#input-groups">Input Groups</a>
-    </h1>
-  </header>
+    <header class="win-section-header row">
+        <h1 class="win-section-title col-xs-24">
+            <a href="#input-groups">Input Groups</a>
+        </h1>
+    </header>
 
-  <div class="row">
-    <div class="col-xs-8">
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-      </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
 
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-        <span class="input-group-addon" id="basic-addon2">@example.com</span>
-      </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
 
-      <div class="input-group">
-        <span class="input-group-addon">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-addon">.00</span>
-      </div>
-    </div>
-    <div class="col-xs-24">
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-addon">.00</span>
+            </div>
 
-      {{#markdown}}
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-link" type="button"><i class="win-icon-find"></i></button>
+                </span>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-link" type="button"><i class="win-icon-find"></i></button>
+                </span>
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <div class="col-xs-24">
+
+        {{#markdown}}
 ```xml
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
 
 <div class="input-group">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-addon" id="basic-addon2">@example.com</span>
 </div>
 
 <div class="input-group">
-  <span class="input-group-addon">$</span>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-  <span class="input-group-addon">.00</span>
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-addon">.00</span>
 </div>
 ```
-      {{/markdown}}
+        {{/markdown}}
+        </div>
     </div>
-  </div>
 
 </section>

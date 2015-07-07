@@ -1,6 +1,7 @@
 .input-group {
     .form-control {
         margin-top: 0;
+        max-width: 100%;
     }
 
     margin-bottom: win-spacer(xs, -4);
@@ -10,4 +11,45 @@
   border-width: 1px;
   border-color: $win-color-fl-50;
   background-color: $win-color-fl-10;
+}
+
+.input-group-btn {
+
+    > .btn {
+        // override default .btn responsiveness
+        font-size: 15px;
+        line-height: 1.46667em;
+
+        padding-top: 4px;
+        padding-bottom: 8px;
+        border-color: $win-color-fl-50;
+        min-width: initial;
+        min-width: auto; //IE likes this instead of initial
+        color: $win-color-fl-50;
+
+        &:hover {
+            border-color: $win-color-fl-70;
+            color: $win-color-type-accent;
+        }
+
+        &:active,
+        &:focus {
+            color: $win-color-fl-70-alt;
+            background-color: $win-color-fl-accent;
+            border-color: transparent;
+        }
+    }
+
+    &:first-child {
+      > .btn,
+      > .btn-group {
+        border-right: 0;
+      }
+    }
+    &:last-child {
+      > .btn,
+      > .btn-group {
+        border-left: 0;
+      }
+    }
 }
