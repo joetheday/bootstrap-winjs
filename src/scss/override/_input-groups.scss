@@ -30,8 +30,8 @@
         padding-top: 4px;
         padding-bottom: 8px;
         border-color: $win-color-fl-50;
-        min-width: initial;
         min-width: auto; //IE likes this instead of initial
+        min-width: initial;
         color: $win-color-fl-50;
 
         &:hover {
