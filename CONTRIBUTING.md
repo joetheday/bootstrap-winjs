@@ -30,4 +30,33 @@ Before submitting a feature or substantial code contribution please discuss it w
 You do not need to sign a Contribution License Agreement if you are just contributing to the README or the Wiki. By submitting a contribution to the README or the Wiki, you are cntributing it under the [Creative Commons CC0 1.0 Universal Public Domain Dedication](http://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Code standards
-Code standars here...
+These are adapted from [@mdo](http://twitter.com/mdo)'s [codeguide.co](http://codeguide.co/) and tweaked to suit our project.
+
+#### General Guidelines
+* Be clear and as concise as possible
+* Avoid unnecessary or unclear abbreviations
+* Opt-in is better than opt-out. Most often this means using classes instead of styling HTML tags, but will apply in other scenarios as well. Give the user control, don't make them do gymnastics to opt-out if they need to.
+
+#### HTML
+* Use soft tabs with four spaces
+* Nested elements should be indented once (four spaces).
+* Always use double quotes, never single quotes, on attributes.
+* Don't include a trailing slash in self-closing elements—the HTML5 spec says they're optional.
+* Don’t omit optional closing tags (e.g. `</li>` or `</body>`).
+
+#### CSS
+* Use soft tabs with four spaces
+* When grouping selectors, use one line for each.
+* Include one space before the opening brace of declaration blocks for legibility.
+* Place closing braces of declaration blocks on a new line.
+* Include one space after : for each declaration.
+* Each declaration should appear on its own line for more accurate error reporting.
+* End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
+* Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
+* Don't include spaces after commas within `rgb()`, `rgba()`, `hsl()`, `hsla()`, or `rect()` values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).
+* Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5 and -.5px instead of -0.5px).
+* Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
+* Use shorthand hex values where available, e.g., `#fff` instead of `#ffffff`.
+* Quote attribute values in selectors, e.g., `input[type="text"]`. They’re only optional in some cases, and it’s a good practice for consistency.
+* Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`
+* Use unitless line-height, e.g., `line-height: 1.2;` istead of `line-height: 1.2px;`
