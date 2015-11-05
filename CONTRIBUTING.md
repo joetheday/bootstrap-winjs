@@ -4,7 +4,7 @@ Winstrap is the Bootstrap theme for Microsoft Design Language
 The vision of Winstrap is to offer an official expression of the Microsoft Design Language for Bootstrap. In general we seek to  theme Bootstrap, rather than add to it things that it doesn't already contain. In some few exceptions we may add things that Bootstrap doesn't have (like our Progress ring, for example) in order to provide important components that would be used on any Microsoft site on the internet. The vision is to remain as close to Bootstrap as possible.
 
 ## How to contribute
-There are many ways that you can contribute to the WinJS project:
+There are many ways that you can contribute to the Winstrap project:
 * Submit a bug
 * Verify fixes for bugs
 * Submit a code fix for a bug
