@@ -1,7 +1,7 @@
 # Winstrap
 Winstrap is the Bootstrap theme for Microsoft Design Language
 
-The vision of Winstrap is to offer an official expression of the Microsoft Design Language for Bootstrap. In general we seek to  theme Bootstrap, rather than add to it things that it doesn't already contain. In some few exceptions we may add things that Bootstrap doesn't have (like our Progress ring, for example) in order to provide important components that would be used on any Microsoft site on the internet. The vision is to remain as close to Bootstrap as possible.
+Winstrap is an open source expression of the Bootstrap web framework, which has been re-skinned to match Microsoft's design language. Created by Microsoft’s Web Services design developers, Winstrap’s vision is to provide key components themed for use across Microsoft sites while preserving the Bootstrap foundation as much as possible.
 
 ## How to contribute
 There are many ways that you can contribute to the Winstrap project:
@@ -26,9 +26,6 @@ This needs to only be done once for any Microsoft open source project.
 #### Feature Requests
 Before submitting a feature or substantial code contribution please discuss it with the team and ensure it aligns with the project's vision.
 
-#### Contributing to README and Wiki
-You do not need to sign a Contribution License Agreement if you are just contributing to the README or the Wiki. By submitting a contribution to the README or the Wiki, you are cntributing it under the [Creative Commons CC0 1.0 Universal Public Domain Dedication](http://creativecommons.org/publicdomain/zero/1.0/).
-
 ## Code standards
 These are adapted from [@mdo](http://twitter.com/mdo)'s [codeguide.co](http://codeguide.co/) and tweaked to suit our project.
 
@@ -49,7 +46,7 @@ These are adapted from [@mdo](http://twitter.com/mdo)'s [codeguide.co](http://co
 * When grouping selectors, use one line for each.
 * Include one space before the opening brace of declaration blocks for legibility.
 * Place closing braces of declaration blocks on a new line.
-* Include one space after : for each declaration.
+* Include one space after `:` for each declaration.
 * Each declaration should appear on its own line for more accurate error reporting.
 * End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
 * Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
@@ -60,3 +57,22 @@ These are adapted from [@mdo](http://twitter.com/mdo)'s [codeguide.co](http://co
 * Quote attribute values in selectors, e.g., `input[type="text"]`. They’re only optional in some cases, and it’s a good practice for consistency.
 * Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`
 * Use unitless line-height, e.g., `line-height: 1.2;` istead of `line-height: 1.2px;`
+
+#### Comments
+The liberal use of comments is appreciated. Good comments should give the reader context and an understanding of why code is written in a certain way. Don’t just repeat the class name or explain things that are obvious from looking at the code. Follow these formatting guidelines for comments:
+* Understand the difference between `/* CSS style comments */` and `// SASS style comments`.
+```
+/* Use CSS style comments like this, only if you want the comment to appear in the compiled CSS */
+// Otherwise use SASS style that will not appear in the compiled CSS
+```
+* Separate your code into sections with comments in this style
+```
+//
+// Color Themes
+//
+```
+* For very long comments, it’s acceptable to break the comment onto multiple lines.
+```
+// This is a very long comment that gives a lot of important
+// details about the nuances of this code
+```
