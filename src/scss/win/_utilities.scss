@@ -1,4 +1,16 @@
-﻿.inline-block {
+.no-outline {
+    &:focus,
+    &:focus:active,
+    &:active,
+    &.focus,
+    &.focus.active,
+    &.active,
+    &.active:focus {
+        outline: none;
+    }
+}
+
+.inline-block {
     display: inline-block;
 }
 

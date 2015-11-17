@@ -17,7 +17,10 @@ module.exports = function (grunt) {
       options: {
         outputStyle: 'nested',
         sourceMap: true,
-        precision: 5
+        precision: 5,
+        includePaths: [
+            "bower_components"
+        ]
       },
       dist: {
         files: {
@@ -33,7 +36,7 @@ module.exports = function (grunt) {
         {
           expand: true,
           cwd: 'src/fonts/',
-          src: '*',
+          src: '**',
           dest: 'dist/fonts/'
         },
         {
@@ -49,25 +52,13 @@ module.exports = function (grunt) {
         {
           expand: true,
           cwd: 'src/js/',
-          src: 'app.js',
+          src: '*.js',
           dest: 'dist/js/'
         },
         {
           expand: true,
           cwd: 'bower_components/jquery/dist/',
-          src: 'jquery.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/html5shiv/dist/',
-          src: 'html5shiv.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/respond.js/dest/',
-          src: 'respond.min.js',
+          src: ['jquery.min.js', 'jquery.min.map'],
           dest: 'dist/js/vendor/'
         },
         {
@@ -85,7 +76,9 @@ module.exports = function (grunt) {
       options: {
         partials: ['src/doc/partials/**/*.hbs'],
         layout: ['src/doc/layouts/default.hbs'],
+        helpers: ['handlebars-helpers/*.js'],
         flatten: true,
+        data: 'src/doc/data/*.json',
 
         // Set the version number
         version: '<%= pkg.version %>',
@@ -116,6 +109,7 @@ module.exports = function (grunt) {
         }
       },
       options: {
+        livereload: true,
         tasks: ['notify:assemble']
       }
     },
@@ -124,7 +118,10 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: './dist/'
+          base: ['./', './dist/'],
+          hostname: 'localhost',
+          livereload: true,
+          open: true
         }
       }
     },
@@ -157,7 +154,7 @@ module.exports = function (grunt) {
       watch: {
         options: {
           title: 'Winstrap',
-          message: 'assemble completed', //required 
+          message: 'assemble completed', //required
         }
       }
     },
@@ -169,7 +166,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-assemble');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');

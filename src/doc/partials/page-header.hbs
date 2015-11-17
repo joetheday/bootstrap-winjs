@@ -4,7 +4,7 @@
             <div class="col-xs-24">
                 <h1>Layout</h1>
 
-                <ul class="nav nav-pills" data-win-scroll="smooth">
+                <ul class="nav nav-pills" data-scroll="smooth">
                     <li role="presentation">
                         <a href="#page-header">Page header</a>
                     </li>
@@ -15,10 +15,7 @@
                         <a href="#grid-small-gutters">Small gutters</a>
                     </li>
                     <li role="presentation">
-                        <a href="#section">Section</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#section-gallery">Section gallery</a>
+                        <a href="#spacers">Spacers</a>
                     </li>
                 </ul>
             </div>
@@ -28,9 +25,9 @@
 
 <div class="container">
 
-    <section class="win-section">
-        <header class="win-section-header row">
-            <h1 class="win-section-title col-xs-24">
+    <section class="section">
+        <header class="section-header row">
+            <h1 class="section-title col-xs-24">
                 <a href="#page-header">Page header</a>
             </h1>
         </header>
@@ -50,13 +47,7 @@
                 <h1>This is a page header</h1>
                 <p>With some content</p>
 
-                <!--
-                    Add data-win-scroll="smooth" attribute
-                    and the following JS code
-                    to enable smooth scrolling
-                -->
-                <ul class="nav nav-pills"
-                    [data-win-scroll="smooth" ]>
+                <ul class="nav nav-pills">
                     <li role="presentation" class="active">
                         <a href="#nav-item-1">Nav item 1</a>
                     </li>
@@ -83,7 +74,7 @@
                 {{#markdown}}
 ```javascript
 $(function () {
-    $('[data-win-scroll="smooth"] a[href*=#]:not([href=#])').click(function () {
+    $('[data-scroll="smooth"] a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
             location.hostname === this.hostname) {
 
@@ -104,6 +95,18 @@ $(function () {
                 {{/markdown}}
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="guidance guidance-usage m-t-xs">
+                    {{#markdown}}
+{{> page-header-guidance.md}}
+                    {{/markdown}}
+                </div>
+            </div>
+        </div>
+
     </section>
+    <hr/>
 
 </div>
