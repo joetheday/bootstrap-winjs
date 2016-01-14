@@ -20,9 +20,11 @@
   color: #000000; }
 
 .color-type-secondary {
+  color: #666666;
   color: rgba(0, 0, 0, 0.6); }
 
 .color-type-disabled {
+  color: #cccccc;
   color: rgba(0, 0, 0, 0.2); }
 
 .color-type-accent {
@@ -35,9 +37,11 @@
   color: #FFFFFF; }
 
 .color-type-secondary-alt {
+  color: #999999;
   color: rgba(255, 255, 255, 0.6); }
 
 .color-type-disabled-alt {
+  color: #333333;
   color: rgba(255, 255, 255, 0.2); }
 
 .color-type-accent-alt {
@@ -47,99 +51,131 @@
   color: #D02E00; }
 
 .color-fill-dim-low {
+  background-color: #f2f2f2;
   background-color: rgba(0, 0, 0, 0.05); }
 
 .color-fill-dim-mid {
+  background-color: #e6e6e6;
   background-color: rgba(0, 0, 0, 0.1); }
 
 .color-fill-neutral-low {
+  background-color: #cccccc;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .color-fill-neutral-mid {
+  background-color: #b3b3b3;
   background-color: rgba(0, 0, 0, 0.3); }
 
 .color-fill-neutral-high {
+  background-color: #999999;
   background-color: rgba(0, 0, 0, 0.4); }
 
 .color-fill-vivid-low {
+  background-color: #666666;
   background-color: rgba(0, 0, 0, 0.6); }
 
 .color-fill-vivid-mid {
+  background-color: #333333;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .color-fill-vivid-high {
+  background-color: black;
   background-color: #000000; }
 
 .color-fill-dim-mid-alt {
+  background-color: #1a1a1a;
   background-color: rgba(255, 255, 255, 0.1); }
 
 .color-fill-dim-high-alt {
+  background-color: #262626;
   background-color: rgba(255, 255, 255, 0.15); }
 
 .color-fill-neutral-low-alt {
+  background-color: #333333;
   background-color: rgba(255, 255, 255, 0.2); }
 
 .color-fill-neutral-mid-alt {
+  background-color: #4d4d4d;
   background-color: rgba(255, 255, 255, 0.3); }
 
 .color-fill-neutral-high-alt {
+  background-color: #666666;
   background-color: rgba(255, 255, 255, 0.4); }
 
 .color-fill-vivid-low-alt {
+  background-color: #999999;
   background-color: rgba(255, 255, 255, 0.6); }
 
 .color-fill-vivid-mid-alt {
+  background-color: #cccccc;
   background-color: rgba(255, 255, 255, 0.8); }
 
 .color-fill-vivid-high-alt {
-  background-color: #FFFFFF; }
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .color-line-dim-low {
+  border-color: #f2f2f2;
   border-color: rgba(0, 0, 0, 0.05); }
 
 .color-line-dim-mid {
+  border-color: #e6e6e6;
   border-color: rgba(0, 0, 0, 0.1); }
 
 .color-line-neutral-low {
+  border-color: #cccccc;
   border-color: rgba(0, 0, 0, 0.2); }
 
 .color-line-neutral-mid {
+  border-color: #b3b3b3;
   border-color: rgba(0, 0, 0, 0.3); }
 
 .color-line-neutral-high {
+  border-color: #999999;
   border-color: rgba(0, 0, 0, 0.4); }
 
 .color-line-vivid-low {
+  border-color: #666666;
   border-color: rgba(0, 0, 0, 0.6); }
 
 .color-line-vivid-mid {
+  border-color: #333333;
   border-color: rgba(0, 0, 0, 0.8); }
 
 .color-line-vivid-high {
+  border-color: black;
   border-color: #000000; }
 
 .color-line-dim-mid-alt {
+  border-color: #1a1a1a;
   border-color: rgba(255, 255, 255, 0.1); }
 
 .color-line-dim-high-alt {
+  border-color: #262626;
   border-color: rgba(255, 255, 255, 0.15); }
 
 .color-line-neutral-low-alt {
+  border-color: #333333;
   border-color: rgba(255, 255, 255, 0.2); }
 
 .color-line-neutral-mid-alt {
+  border-color: #4d4d4d;
   border-color: rgba(255, 255, 255, 0.3); }
 
 .color-line-neutral-high-alt {
+  border-color: #666666;
   border-color: rgba(255, 255, 255, 0.4); }
 
 .color-line-vivid-low-alt {
+  border-color: #999999;
   border-color: rgba(255, 255, 255, 0.6); }
 
 .color-line-vivid-mid-alt {
+  border-color: #cccccc;
   border-color: rgba(255, 255, 255, 0.8); }
 
 .color-line-vivid-high-alt {
+  border-color: white;
   border-color: #FFFFFF; }
 
 .color-bg-light-vivid-high {
@@ -173,27 +209,35 @@
   background: #404040; }
 
 .color-fill-accent-dim-low {
+  background-color: #f2f8fd;
   background-color: rgba(0, 120, 215, 0.05); }
 
 .color-fill-accent-dim-mid {
+  background-color: #e6f2fb;
   background-color: rgba(0, 120, 215, 0.1); }
 
 .color-fill-accent-dim-high {
+  background-color: #d9ebf9;
   background-color: rgba(0, 120, 215, 0.15); }
 
 .color-fill-accent-neutral-low {
+  background-color: #cce4f7;
   background-color: rgba(0, 120, 215, 0.2); }
 
 .color-fill-accent-neutral-mid {
+  background-color: #b3d7f3;
   background-color: rgba(0, 120, 215, 0.3); }
 
 .color-fill-accent-neutral-high {
+  background-color: #99c9ef;
   background-color: rgba(0, 120, 215, 0.4); }
 
 .color-fill-accent-vivid-low {
+  background-color: #66aee7;
   background-color: rgba(0, 120, 215, 0.6); }
 
 .color-fill-accent-vivid-mid {
+  background-color: #3393df;
   background-color: rgba(0, 120, 215, 0.8); }
 
 .color-fill-accent-vivid-high {
@@ -203,27 +247,35 @@
   background-color: #D02E00; }
 
 .color-line-accent-dim-low {
+  border-color: #f2f8fd;
   border-color: rgba(0, 120, 215, 0.05); }
 
 .color-line-accent-dim-mid {
+  border-color: #e6f2fb;
   border-color: rgba(0, 120, 215, 0.1); }
 
 .color-line-accent-dim-high {
+  border-color: #d9ebf9;
   border-color: rgba(0, 120, 215, 0.15); }
 
 .color-line-accent-neutral-low {
+  border-color: #cce4f7;
   border-color: rgba(0, 120, 215, 0.2); }
 
 .color-line-accent-neutral-mid {
+  border-color: #b3d7f3;
   border-color: rgba(0, 120, 215, 0.3); }
 
 .color-line-accent-neutral-high {
+  border-color: #99c9ef;
   border-color: rgba(0, 120, 215, 0.4); }
 
 .color-line-accent-vivid-low {
+  border-color: #66aee7;
   border-color: rgba(0, 120, 215, 0.6); }
 
 .color-line-accent-vivid-mid {
+  border-color: #3393df;
   border-color: rgba(0, 120, 215, 0.8); }
 
 .color-line-accent-vivid-high {

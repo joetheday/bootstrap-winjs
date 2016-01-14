@@ -104,6 +104,21 @@ $color-accent-vivid-mid:            rgba($color-accent, 0.8);
 $color-accent-vivid-high:           $color-accent;
 
 
+// Return a HEX and RGBa value to a specific attribute to keep things IE8 Friendly
+// for instance:
+// mix-solid-color(background-color, $color-vivid-low, $color-white);
+// produces:
+// background-color: #666;
+// background-color: rgba(0,0,0,.6);
+// you can pass any attribute that accepts color to this mixin
+@mixin mix-solid-color($attribute, $color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    #{$attribute}: $solid-color;
+    #{$attribute}: $color;
+}
+
 //
 // Color classes
 //
@@ -132,11 +147,11 @@ $color-accent-vivid-high:           $color-accent;
 }
 
 .color-type-secondary {
-    color: $color-type-secondary;
+    @include mix-solid-color(color, $color-type-secondary, $color-white);
 }
 
 .color-type-disabled {
-    color: $color-type-disabled;
+    @include mix-solid-color(color, $color-type-disabled, $color-white);
 }
 
 .color-type-accent {
@@ -154,11 +169,11 @@ $color-accent-vivid-high:           $color-accent;
 }
 
 .color-type-secondary-alt {
-    color: $color-type-secondary-alt;
+    @include mix-solid-color(color, $color-type-secondary-alt, $color-black);
 }
 
 .color-type-disabled-alt {
-    color: $color-type-disabled-alt;
+    @include mix-solid-color(color, $color-type-disabled-alt, $color-black);
 }
 
 .color-type-accent-alt {
@@ -172,137 +187,137 @@ $color-accent-vivid-high:           $color-accent;
 
 // Fill colors
 .color-fill-dim-low {
-    background-color: $color-dim-low;
+    @include mix-solid-color(background-color, $color-dim-low, $color-white);
 }
 
 .color-fill-dim-mid {
-    background-color: $color-dim-mid;
+    @include mix-solid-color(background-color, $color-dim-mid, $color-white);
 }
 
 .color-fill-neutral-low {
-    background-color: $color-neutral-low;
+    @include mix-solid-color(background-color, $color-neutral-low, $color-white);
 }
 
 .color-fill-neutral-mid {
-    background-color: $color-neutral-mid;
+    @include mix-solid-color(background-color, $color-neutral-mid, $color-white);
 }
 
 .color-fill-neutral-high {
-    background-color: $color-neutral-high;
+    @include mix-solid-color(background-color, $color-neutral-high, $color-white);
 }
 
 .color-fill-vivid-low {
-    background-color: $color-vivid-low;
+    @include mix-solid-color(background-color, $color-vivid-low, $color-white);
 }
 
 .color-fill-vivid-mid {
-    background-color: $color-vivid-mid;
+    @include mix-solid-color(background-color, $color-vivid-mid, $color-white);
 }
 
 .color-fill-vivid-high {
-    background-color: $color-vivid-high;
+    @include mix-solid-color(background-color, $color-vivid-high, $color-white);
 }
 
 
 // Alt fill colors
 .color-fill-dim-mid-alt {
-    background-color: $color-dim-mid-alt;
+    @include mix-solid-color(background-color, $color-dim-mid-alt, $color-black);
 }
 
 .color-fill-dim-high-alt {
-    background-color: $color-dim-high-alt;
+    @include mix-solid-color(background-color, $color-dim-high-alt, $color-black);
 }
 
 .color-fill-neutral-low-alt {
-    background-color: $color-neutral-low-alt;
+    @include mix-solid-color(background-color, $color-neutral-low-alt, $color-black);
 }
 
 .color-fill-neutral-mid-alt {
-    background-color: $color-neutral-mid-alt;
+    @include mix-solid-color(background-color, $color-neutral-mid-alt, $color-black);
 }
 
 .color-fill-neutral-high-alt {
-    background-color: $color-neutral-high-alt;
+    @include mix-solid-color(background-color, $color-neutral-high-alt, $color-black);
 }
 
 .color-fill-vivid-low-alt {
-    background-color: $color-vivid-low-alt;
+    @include mix-solid-color(background-color, $color-vivid-low-alt, $color-black);
 }
 
 .color-fill-vivid-mid-alt {
-    background-color: $color-vivid-mid-alt;
+    @include mix-solid-color(background-color, $color-vivid-mid-alt, $color-black);
 }
 
 .color-fill-vivid-high-alt {
-    background-color: $color-vivid-high-alt;
+    @include mix-solid-color(background-color, $color-neutral-low, $color-black);
 }
 
 
 // Line colors
 .color-line-dim-low {
-    border-color: $color-dim-low;
+    @include mix-solid-color(border-color, $color-dim-low, $color-white);
 }
 
 .color-line-dim-mid {
-    border-color: $color-dim-mid;
+    @include mix-solid-color(border-color, $color-dim-mid, $color-white);
 }
 
 .color-line-neutral-low {
-    border-color: $color-neutral-low;
+    @include mix-solid-color(border-color, $color-neutral-low, $color-white);
 }
 
 .color-line-neutral-mid {
-    border-color: $color-neutral-mid;
+    @include mix-solid-color(border-color, $color-neutral-mid, $color-white);
 }
 
 .color-line-neutral-high {
-    border-color: $color-neutral-high;
+    @include mix-solid-color(border-color, $color-neutral-high, $color-white);
 }
 
 .color-line-vivid-low {
-    border-color: $color-vivid-low;
+    @include mix-solid-color(border-color, $color-vivid-low, $color-white);
 }
 
 .color-line-vivid-mid {
-    border-color: $color-vivid-mid;
+    @include mix-solid-color(border-color, $color-vivid-mid, $color-white);
 }
 
 .color-line-vivid-high {
-    border-color: $color-vivid-high;
+    @include mix-solid-color(border-color, $color-vivid-high, $color-white);
 }
 
 
 // Alt line colors
 .color-line-dim-mid-alt {
-    border-color: $color-dim-mid-alt;
+    @include mix-solid-color(border-color, $color-dim-mid-alt, $color-black);
 }
 
 .color-line-dim-high-alt {
-    border-color: $color-dim-high-alt;
+    @include mix-solid-color(border-color, $color-dim-high-alt, $color-black);
 }
 
 .color-line-neutral-low-alt {
-    border-color: $color-neutral-low-alt;
+    @include mix-solid-color(border-color, $color-neutral-low-alt, $color-black);
 }
 
 .color-line-neutral-mid-alt {
-    border-color: $color-neutral-mid-alt;
+    @include mix-solid-color(border-color, $color-neutral-mid-alt, $color-black);
 }
 
 .color-line-neutral-high-alt {
-    border-color: $color-neutral-high-alt;
+    @include mix-solid-color(border-color, $color-neutral-high-alt, $color-black);
 }
 
 .color-line-vivid-low-alt {
-    border-color: $color-vivid-low-alt;
+    @include mix-solid-color(border-color, $color-vivid-low-alt, $color-black);
 }
 
 .color-line-vivid-mid-alt {
-    border-color: $color-vivid-mid-alt;
+    @include mix-solid-color(border-color, $color-vivid-mid-alt, $color-black);
 }
 
 .color-line-vivid-high-alt {
-    border-color: $color-vivid-high-alt;
+    @include mix-solid-color(border-color, $color-vivid-high-alt, $color-black);
 }
 
 
@@ -350,35 +365,35 @@ $color-accent-vivid-high:           $color-accent;
 
 // Accent background colors
 .color-fill-accent-dim-low {
-    background-color: $color-accent-dim-low;
+    @include mix-solid-color(background-color, $color-accent-dim-low, $color-white);
 }
 
 .color-fill-accent-dim-mid {
-    background-color: $color-accent-dim-mid;
+    @include mix-solid-color(background-color, $color-accent-dim-mid, $color-white);
 }
 
 .color-fill-accent-dim-high {
-    background-color: $color-accent-dim-high;
+    @include mix-solid-color(background-color, $color-accent-dim-high, $color-white);
 }
 
 .color-fill-accent-neutral-low {
-    background-color: $color-accent-neutral-low;
+    @include mix-solid-color(background-color, $color-accent-neutral-low, $color-white);
 }
 
 .color-fill-accent-neutral-mid {
-    background-color: $color-accent-neutral-mid;
+    @include mix-solid-color(background-color, $color-accent-neutral-mid, $color-white);
 }
 
 .color-fill-accent-neutral-high {
-    background-color: $color-accent-neutral-high;
+    @include mix-solid-color(background-color, $color-accent-neutral-high, $color-white);
 }
 
 .color-fill-accent-vivid-low {
-    background-color: $color-accent-vivid-low;
+    @include mix-solid-color(background-color, $color-accent-vivid-low, $color-white);
 }
 
 .color-fill-accent-vivid-mid {
-    background-color: $color-accent-vivid-mid;
+    @include mix-solid-color(background-color, $color-accent-vivid-mid, $color-white);
 }
 
 .color-fill-accent-vivid-high {
@@ -392,35 +407,35 @@ $color-accent-vivid-high:           $color-accent;
 
 // Accent line colors
 .color-line-accent-dim-low {
-    border-color: $color-accent-dim-low;
+    @include mix-solid-color(border-color, $color-accent-dim-low, $color-white);
 }
 
 .color-line-accent-dim-mid {
-    border-color: $color-accent-dim-mid;
+    @include mix-solid-color(border-color, $color-accent-dim-mid, $color-white);
 }
 
 .color-line-accent-dim-high {
-    border-color: $color-accent-dim-high;
+    @include mix-solid-color(border-color, $color-accent-dim-high, $color-white);
 }
 
 .color-line-accent-neutral-low {
-    border-color: $color-accent-neutral-low;
+    @include mix-solid-color(border-color, $color-accent-neutral-low, $color-white);
 }
 
 .color-line-accent-neutral-mid {
-    border-color: $color-accent-neutral-mid;
+    @include mix-solid-color(border-color, $color-accent-neutral-mid, $color-white);
 }
 
 .color-line-accent-neutral-high {
-    border-color: $color-accent-neutral-high;
+    @include mix-solid-color(border-color, $color-accent-neutral-high, $color-white);
 }
 
 .color-line-accent-vivid-low {
-    border-color: $color-accent-vivid-low;
+    @include mix-solid-color(border-color, $color-accent-vivid-low, $color-white);
 }
 
 .color-line-accent-vivid-mid {
-    border-color: $color-accent-vivid-mid;
+    @include mix-solid-color(border-color, $color-accent-vivid-mid, $color-white);
 }
 
 .color-line-accent-vivid-high {
